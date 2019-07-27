@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pizzette's</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" type="text/javascript"></script>
-    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <h1 class="jumbotron">Pizette's pizza</h1>
-     <h2>Choose size of Pizza</h2>
+
+<head>
+  <title>Pizzette's</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1 class="jumbotron">Pizette's pizza</h1>
+  <!-- <h2>Size of Pizza</h2>
+     <h4>Small</h4>
      <div class="row">
        <div class="col-md-4">
-         <div class="small">
-           <h4>Small</h4>
-         </div>
-       </div>
-       <div class="col-md-4">
-         <h4>Medium</h4>
-       </div>
-       <div class="col-md-4">
-         <h4>Large</h4>
-       </div>
-     </div>
-     <h2>Choose Topping</h2>
-       <div class="row">
-         <div class="col-md-3">
-           <div class="Toppings">
-             <h4>Toppings</h4>
-             <p>Pepperoni</p>
-             <p>Mushrooms</p>
-             <p>Bacon</p>
-             <p>Cheese</p>
-           </div>
-         </div>
-         <div class="col-md-3">
-           <div class="ps">
-             <h4>Price on small pizza</h4>
-             <p>sh.100</p>
-             <p>sh.80</p>
-             <p>sh.110</p>
-             <p>sh.120</p>
-           </div>
-         </div>
-         <div class="col-md-3">
-           <div class="pm">
-             <h4>Price on  medium pizza</h4>
-             <p>sh.130</p>
-             <p>sh.100</p>
-             <p>sh.120</p>
-             <p>sh.140</p>
-           </div>
-         </div>
-         <div class="col-md-3">
-           <div class="pl">
-             <h4>Price on large pizza</h4>
-             <p>sh.150</p>
-             <p>sh.120</p>
-             <p>sh.130</p>
-             <p>sh.160</p>
-           </div>
-         </div>
-       </div>
-       <h2>Choose crust</h2>
-        <div class="row">
+         <select id="t1" name="topping" class="topping1" onchange="populate('topping1','price1')">
+           <option value="">--Choose Topping--</option>
+           <option value="Pepperoni">Pepperoni</option>
+            <option value="Mushrooms">Mushrooms</option>
+            <option value="Bacon">Bacon</option>
+            <option value="Cheese">Cheese</option>
+         </select>
+         <select id="pr1" name="price1">
+           <option value=""></option>
 
-          <div class="col-md-3">
-            <h4>Crust</h4>
-            <p>Crispy</p>
-            <p>Thick</p>
-            <p>Thin</p>
-            <p>Gluten-Free</p>
-          </div>
-          <div class="col-md-3">
-            <h4>Price on small pizza</h4>
-            <p>sh.100</p>
-            <p>sh.150</p>
-            <p>sh.80</p>
-            <p>sh.180</p>
-          </div>
-          <div class="col-md-3">
-            <h4>Price on medium pizza</h4>
-            <p>sh.100</p>
-            <p>sh.150</p>
-            <p>sh.80</p>
-            <p>sh.180</p>
-          </div>
-          <div class="col-md-3">
-            <h4>Price on large pizza</h4>
-            <p>sh.100</p>
-            <p>sh.150</p>
-            <p>sh.80</p>
-            <p>sh.180</p>
-          </div>
-        </div>
-  </body>
+         </select>
+
+       </div>
+     </div> -->
+  <div class="row">
+    <div class="col-md-4">
+      <img src="img/spizza.jpg" height="70" width="70" alt="pizza">
+      <input type="radio" name="size" value="small">Small
+    </div>
+    <div class="col-md-4">
+      <img src="img/mpizza.jpg" height="90" width="90" alt="pizza">
+      <input type="radio" name="size" value="medium">Medium
+    </div>
+    <div class="col-md-4">
+      <img src="img/lpizza.jpg" height="110" width="110" alt="pizza">
+      <input type="radio" name="size" value="large">Large
+    </div>
+  </div>
+  <h2>Choose Topping</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Toppings</h4>
+      Pepperoni<br>
+      Mushrooms<br>
+      Bacon<br>
+      Cheese<br>
+    </div>
+    <div class="col-md-3">
+      <h4>Price on small pizza</h4>
+      <input type="radio" name="price" value="100">Ksh.100<br>
+      <input type="radio" name="price" value="80">Ksh.80<br>
+      <input type="radio" name="price" value="110">Ksh.110<br>
+      <input type="radio" name="price" value="120">Ksh.120<br>
+
+
+    </div>
+    <div class="col-md-3">
+      <h4>Price on medium pizza</h4>
+      <input type="radio" name="price" value="110">Ksh.110<br>
+      <input type="radio" name="price" value="90">Ksh.90<br>
+      <input type="radio" name="price" value="120">Ksh.120<br>
+      <input type="radio" name="price" value="130">Ksh.130<br>
+
+    </div>
+    <div class="col-md-3">
+      <h4>Price on large pizza</h4>
+      <input type="radio" name="price" value="120">Ksh.120<br>
+      <input type="radio" name="price" value="100">Ksh.100<br>
+      <input type="radio" name="price" value="130">Ksh.130<br>
+      <input type="radio" name="price" value="140">Ksh.140<br>
+    </div>
+  </div>
+  <h2>Choose crust</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Crust</h4>
+      Crispy<br>
+      Thick<br>
+      Thin<br>
+      Gluten-Free<br>
+    </div>
+    <div class="col-md-3">
+      <h4>Price on small pizza</h4>
+      <input type="radio" name="cprice" value="90">Ksh.90<br>
+      <input type="radio" name="cprice" value="100">Ksh.100<br>
+      <input type="radio" name="cprice" value="90">Ksh.90<br>
+      <input type="radio" name="cprice" value="140">Ksh.140<br>
+    </div>
+    <div class="col-md-3">
+      <h4>Price on medium pizza</h4>
+      <input type="radio" name="cprice" value="100">Ksh.100<br>
+      <input type="radio" name="cprice" value="120">Ksh.120<br>
+      <input type="radio" name="cprice" value="100">Ksh.100<br>
+      <input type="radio" name="cprice" value="160">Ksh.160<br>
+    </div>
+    <div class="col-md-3">
+      <h4>Price on large pizza</h4>
+      <input type="radio" name="cprice" value="110">Ksh.110<br>
+      <input type="radio" name="cprice" value="130">Ksh.130<br>
+      <input type="radio" name="cprice" value="105">Ksh.105<br>
+      <input type="radio" name="cprice" value="180">Ksh.180<br>
+    </div>
+  </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+
 </html>
