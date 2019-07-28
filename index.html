@@ -8,42 +8,53 @@
 </head>
 
 <body>
-  <h1 class="jumbotron">Pizette's pizza</h1>
+  <h1>Pizette's pizza</h1>
+   <h2>Pizza menu</h2>
   <div class="row">
-    <div class="col-md-4">
-      <h1>Pizza menu</h2><br>
-      Size<br>
-      Small........250 <br>
-      Medium.......400 <br>
-      Large........1000<br><br>
+    <div class="col-md-2">
+      <h3>Size</h3>
+      <ul>
+      <li>Small........250</li>
+      <li>Medium.......400</li>
+      <li>Large........1000</li>
+    </ul>
+   </div>
+      <div class="col-md-3">
+        <h3>Crust Options</h3>
+        <ul>
+          <li>Crispy ................Ksh.100</li>
+          <li>Thick ..................Ksh.150</li>
+          <li>Thin .....................0 *Free</li>
+          <li>Gluten-Free............Ksh.200</li>
+        </ul>
+      </div>
+      <div class="col-md-7">
+
+        <h3>Available Toppings</h3>
+        <ul>
+          <li>Mushrooms.........Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......Ksh.90(for large pizza size)</li>
+          <li>Pepperoni.........Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......Ksh.90(for large pizza size)</li>
+          <li>Bacon.............Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......ksh.90(for large pizza size)</li>
+          <li>Cheese...........0 *Free(for small size)......Ksh.20(for medium pizza size)......Ksh.40(for large pizza size)</li>
+        </ul>
 
 
-      Crust Options<br><br>
-
-      Crispy ................ 100<br>
-      Thick ..................150<br>
-      Thin .....................0 *Free<br>
-      Gluten-Free............ 200<br><br>
-
-      Available Toppings<br><br>
-
-      Mushrooms.............. 50<br>
-      Pepperoni.............. 50<br>
-      Bacon.................. 50<br>
-      Cheese.................. 0 *Free<br><br>
-
+      </div>
       Delivery Fee ..........150<br>
-    </div>
-    <div class="col-md-4">
-      Form
+
+  </div>
+    <div class="row">
+    <div class="col-md-6">
+        <h2>Order Form</h2>
       <form id=topping1>
-        <select id=size>
+
+        <select id="size">
           <option value="">---Choose Size---</option>
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="large">Large</option>
         </select><br><br>
-        <select>
+        <select id="crust">
           <option value="">---Choose Crust---</option>
           <option value="crispy">Crispy</option>
           <option value="thick">Thick</option>
@@ -57,17 +68,19 @@
         <input type="checkbox" id="toppingCheese" value="cheese">Cheese<br>
         <input type="submit"  value="Add">
       </form>
-      <button type="button" id="checkout">Checkout</button>
     </div>
-    <div class="col-md-4">
-      Order description
+    <div class="col-md-6">
+      <h2>Order description</h2>
       <ul id="pizzaorder">
 
       </ul>
+        Do you want your order to be delivered?<br>
+        <input type="checkbox" id="delivery" value="delivery">YES<br>
+        <input type="text" id=location placeholder="Enter location...">
+        <button type="button" id="checkout">Checkout</button>
     </div>
   </div>
 </body>
-<script src="js/script.js"></script>
 <script src="js/jquery-3.4.1.js"></script>
-
+<script src="js/script.js"></script>
 </html>
