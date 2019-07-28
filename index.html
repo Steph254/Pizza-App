@@ -11,7 +11,7 @@
   <h1 class="jumbotron">Pizette's pizza</h1>
   <div class="row">
     <div class="col-md-4">
-      Pizza menu<br>
+      <h1>Pizza menu</h2><br>
       Size<br>
       Small........250 <br>
       Medium.......400 <br>
@@ -36,13 +36,13 @@
     </div>
     <div class="col-md-4">
       Form
-      <form>
-        <select>
+      <form id=topping1>
+        <select id=size>
           <option value="">---Choose Size---</option>
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="large">Large</option>
-        </select><br>
+        </select><br><br>
         <select>
           <option value="">---Choose Crust---</option>
           <option value="crispy">Crispy</option>
@@ -50,20 +50,22 @@
           <option value="thin">Thin</option>
           <option value="glutenfree">Gluten-free</option>
         </select><br>
-        <input type="checkbox" name="" value="mushroom">Mushroom
-        <input type="checkbox" name="" value="pepperoni">Pepperoni
-        <input type="checkbox" name="" value="bacon">Bacon
-        <input type="checkbox" name="" value="cheese">Cheese
-
+        Choose Toppings<br>
+        <input type="checkbox" id="toppingMushrooms" value="mushroom">Mushroom
+        <input type="checkbox" id="toppingPepperoni" value="pepperoni">Pepperoni
+        <input type="checkbox" id="toppingBacon" value="bacon">Bacon
+        <input type="checkbox" id="toppingCheese" value="cheese">Cheese<br>
+        <input type="submit"  value="Add">
       </form>
+      <button type="button" id="checkout">Checkout</button>
     </div>
     <div class="col-md-4">
       Order description
+      <ul id="pizzaorder">
+
+      </ul>
     </div>
   </div>
-  <ul id="pizzaorder">
-
-  </ul>
 </body>
 <script src="js/script.js"></script>
 <script src="js/jquery-3.4.1.js"></script>
