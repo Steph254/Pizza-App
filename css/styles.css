@@ -1,59 +1,67 @@
 @font-face {
-  src:url('fonts/Pacifico-Regular.ttf');
-  font-family: 'Pacifico',cursive;
+  src: url('fonts/Pacifico-Regular.ttf');
+  font-family: 'Pacifico', cursive;
 }
-.heading{
-  background-color:rgba(255, 0, 0, 0.5);
+
+.heading {
+  background-color: rgba(255, 0, 0, 0.5);
   text-align: center;
-  font-family:'Pacifico',cursive;
+  font-family: 'Pacifico', cursive;
   font-weight: 200;
   font-size: 40px;
   font-style: italic;
 }
-h1{
-background-color:rgba(255, 0, 0, 0.5);
-text-align: center;
-font-family:'Pacifico',cursive;
-font-weight:800;
-font-size: 80px;
-font-style:oblique;
+
+h1 {
+  background-color: rgba(255, 0, 0, 0.5);
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-weight: 800;
+  font-size: 80px;
+  font-style: oblique;
 }
-h2{
-  font-family:'Pacifico',cursive;
+
+h2 {
+  font-family: 'Pacifico', cursive;
   font-style: italic;
   font-weight: 500;
   font-size: 50px;
   color: white;
 }
-body{
+
+body {
   overflow-x: hidden;
   background-image: url('../img/mpizza.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
 }
-ul li{
-  font-family: 'Pacifico',cursive;
+
+ul li {
+  font-family: 'Pacifico', cursive;
   font-weight: 900;
   font-style: italic;
   font-size: 20px;
-  color:black;
+  color: black;
 }
-h3{
-  font-family:'Pacifico',cursive;
+
+h3 {
+  font-family: 'Pacifico', cursive;
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
   color: white;
 }
-h5{
-  font-family:'Pacifico',cursive;
+
+h5 {
+  font-family: 'Pacifico', cursive;
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
   color: white;
 }
-p{
+
+p {
   font-family: serif;
   font-weight: 600;
   font-size: 20px;

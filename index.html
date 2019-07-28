@@ -12,40 +12,42 @@
     <h1>Pizette's pizza</h1>
     <p>Pizza that makes you go "bizzarre"</p>
   </div>
-   <h2>Pizza menu</h2>
+  <h2>Pizza menu</h2>
   <div class="row">
     <div class="col-md-2">
       <h3>Size</h3>
       <ul>
-      <li>Small........250</li>
-      <li>Medium.......400</li>
-      <li>Large........1000</li>
-    </ul>
-   </div>
-      <div class="col-md-3">
-        <h3>Crust Options</h3>
-        <ul>
-          <li>Crispy ................Ksh.100</li>
-          <li>Thick ..................Ksh.150</li>
-          <li>Thin .....................0 *Free</li>
-          <li>Gluten-Free............Ksh.200</li>
-        </ul>
-      </div>
-      <div class="col-md-7">
+        <li>Small........250</li>
+        <li>Medium.......400</li>
+        <li>Large........1000</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3>Crust Options</h3>
+      <ul>
+        <li>Crispy ................Ksh.100</li>
+        <li>Thick ..................Ksh.150</li>
+        <li>Thin .....................0 *Free</li>
+        <li>Gluten-Free............Ksh.200</li>
+      </ul>
+    </div>
+    <div class="col-md-7">
 
-        <h3>Available Toppings</h3>
-        <ul>
-          <li>Mushrooms.........Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......Ksh.90(for large pizza size)</li>
-          <li>Pepperoni.........Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......Ksh.90(for large pizza size)</li>
-          <li>Bacon.............Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......ksh.90(for large pizza size)</li>
-          <li>Cheese...........0 *Free(for small size)......Ksh.20(for medium pizza size)......Ksh.40(for large pizza size)</li>
-        </ul>
-       </div>
-       </div>
-           <center><p>Delivery Fee ..........Ksh.150</p></center>
-    <div class="row">
+      <h3>Available Toppings</h3>
+      <ul>
+        <li>Mushrooms.........Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......Ksh.90(for large pizza size)</li>
+        <li>Pepperoni.........Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......Ksh.90(for large pizza size)</li>
+        <li>Bacon.............Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......ksh.90(for large pizza size)</li>
+        <li>Cheese...........0 *Free(for small size)......Ksh.20(for medium pizza size)......Ksh.40(for large pizza size)</li>
+      </ul>
+    </div>
+  </div>
+  <center>
+    <p>Delivery Fee ..........Ksh.150</p>
+  </center>
+  <div class="row">
     <div class="col-md-6">
-        <h2>Order Form</h2>
+      <h2>Order Form</h2>
       <form id=topping1>
         <select id="size">
           <option value="">---Choose Size---</option>
@@ -65,7 +67,7 @@
         <input type="checkbox" id="toppingPepperoni" value="pepperoni"><strong>Pepperoni</strong><br>
         <input type="checkbox" id="toppingBacon" value="bacon"><strong>Bacon</strong>
         <input type="checkbox" id="toppingCheese" value="cheese"><strong>Cheese</strong><br>
-        <input type="submit"  value="Add">
+        <input type="submit" value="Add">
       </form>
     </div>
     <div class="col-md-6">
@@ -73,13 +75,14 @@
       <ul id="pizzaorder">
 
       </ul>
-        <p>Do you want your order to be delivered?</p>
-        <input type="checkbox" id="delivery" value="delivery">YES<br>
-        <input type="text" id=location placeholder="Enter location...">
-        <button type="button" id="checkout">Checkout</button>
+      <p>Do you want your order to be delivered?</p>
+      <input type="checkbox" id="delivery" value="delivery">YES<br>
+      <input type="text" id=location placeholder="Enter location...">
+      <button type="button" id="checkout">Checkout</button>
     </div>
   </div>
 </body>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/script.js"></script>
+
 </html>
