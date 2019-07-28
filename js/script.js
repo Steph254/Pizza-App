@@ -1,3 +1,11 @@
+var pizzaSize = { small: 250, medium: 400, large: 1000 };
+var pizzaCrust= {crispy: 100, thick:150,  thin:0,glutenfree:200}
+var pizzaTopping={mushroom:50, pepperoni:50, bacon:50, cheese:0}
+
+
+
+
+
 function Pizza(size, topping,crust) {
   this.size = size;
   this.topping = topping;
