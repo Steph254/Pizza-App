@@ -1,28 +1,61 @@
 @font-face {
-  src:url('fonts/MeieScript-Regular.ttf');
-  font-family: 'MeieScript',cursive;
-  /* src:url('fonts/MeieScript-Regular.ttf');
-  font-family:'MeieScript',cursive; */
+  src:url('fonts/Pacifico-Regular.ttf');
+  font-family: 'Pacifico',cursive;
 }
-.jumbotron{
+.heading{
   background-color:rgba(255, 0, 0, 0.5);
   text-align: center;
-  font-family:'MeieScript',cursive;
-  font-weight: 700;
-  font-size: 100px;
+  font-family:'Pacifico',cursive;
+  font-weight: 200;
+  font-size: 40px;
+  font-style: italic;
+}
+h1{
+background-color:rgba(255, 0, 0, 0.5);
+text-align: center;
+font-family:'Pacifico',cursive;
+font-weight:800;
+font-size: 80px;
+font-style:oblique;
 }
 h2{
-  font-family:'MeieScript',cursive;
+  font-family:'Pacifico',cursive;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 50px;
+  color: white;
 }
-.topping1 select{
-  font-weight: bolder;
-  background: #05639f;
-  padding:10px;
-  width:250px;
-  height:50px;
-  border:none;
-  font-size:20px;
-  box-shadow:0 5px 25px rgba(0,0,0,.5)
-  -webkit-appearance:button;
-
+body{
+  overflow-x: hidden;
+  background-image: url('../img/mpizza.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+ul li{
+  font-family: 'Pacifico',cursive;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  color:black;
+}
+h3{
+  font-family:'Pacifico',cursive;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+h5{
+  font-family:'Pacifico',cursive;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+p{
+  font-family: serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
 }

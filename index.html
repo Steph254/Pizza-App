@@ -8,7 +8,10 @@
 </head>
 
 <body>
-  <h1>Pizette's pizza</h1>
+  <div class="heading">
+    <h1>Pizette's pizza</h1>
+    <p>Pizza that makes you go "bizzarre"</p>
+  </div>
    <h2>Pizza menu</h2>
   <div class="row">
     <div class="col-md-2">
@@ -37,17 +40,13 @@
           <li>Bacon.............Ksh.50(for small pizza size)......Ksh.70(for medium pizza size)......ksh.90(for large pizza size)</li>
           <li>Cheese...........0 *Free(for small size)......Ksh.20(for medium pizza size)......Ksh.40(for large pizza size)</li>
         </ul>
-
-
-      </div>
-      Delivery Fee ..........150<br>
-
-  </div>
+       </div>
+       </div>
+           <center><p>Delivery Fee ..........Ksh.150</p></center>
     <div class="row">
     <div class="col-md-6">
         <h2>Order Form</h2>
       <form id=topping1>
-
         <select id="size">
           <option value="">---Choose Size---</option>
           <option value="small">Small</option>
@@ -60,12 +59,12 @@
           <option value="thick">Thick</option>
           <option value="thin">Thin</option>
           <option value="glutenfree">Gluten-free</option>
-        </select><br>
-        Choose Toppings<br>
-        <input type="checkbox" id="toppingMushrooms" value="mushroom">Mushroom
-        <input type="checkbox" id="toppingPepperoni" value="pepperoni">Pepperoni
-        <input type="checkbox" id="toppingBacon" value="bacon">Bacon
-        <input type="checkbox" id="toppingCheese" value="cheese">Cheese<br>
+        </select><br><br>
+        <h5>Choose Toppings</h5>
+        <input type="checkbox" id="toppingMushrooms" value="mushroom"><strong>Mushroom</strong>
+        <input type="checkbox" id="toppingPepperoni" value="pepperoni"><strong>Pepperoni</strong><br>
+        <input type="checkbox" id="toppingBacon" value="bacon"><strong>Bacon</strong>
+        <input type="checkbox" id="toppingCheese" value="cheese"><strong>Cheese</strong><br>
         <input type="submit"  value="Add">
       </form>
     </div>
@@ -74,7 +73,7 @@
       <ul id="pizzaorder">
 
       </ul>
-        Do you want your order to be delivered?<br>
+        <p>Do you want your order to be delivered?</p>
         <input type="checkbox" id="delivery" value="delivery">YES<br>
         <input type="text" id=location placeholder="Enter location...">
         <button type="button" id="checkout">Checkout</button>
