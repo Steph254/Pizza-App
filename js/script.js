@@ -104,6 +104,5 @@ $(document).ready(function() {
     $("ul#pizzaorder").append("<li><span class='order'>" + newPizza.fullOrder() + "</span></li>");
     orders.push(newPizza.calculateCost());
     $('input:checkbox:checked').prop('checked', false);
-    // @todo How to clear select
    });
   });
