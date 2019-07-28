@@ -52,12 +52,13 @@
     </div>
     <div class="col-md-3">
       <h4>Price on small pizza</h4>
-      <input type="radio" name="price" value="100">Ksh.100<br>
-      <input type="radio" name="price" value="80">Ksh.80<br>
-      <input type="radio" name="price" value="110">Ksh.110<br>
-      <input type="radio" name="price" value="120">Ksh.120<br>
-
-
+      <form id=topping1>
+        <input type="radio" name="price" value="Pepperoni" class="topping">Ksh.100<br>
+        <input type="radio" name="price" value="Mushrooms"class="topping">Ksh.80<br>
+        <input type="radio" name="price" value="Bacon"class="topping">Ksh.110<br>
+        <input type="radio" name="price" value="Cheese"class="topping">Ksh.120<br>
+        <input type="submit" name="price" value="Add">
+      </form>
     </div>
     <div class="col-md-3">
       <h4>Price on medium pizza</h4>
@@ -106,6 +107,9 @@
       <input type="radio" name="cprice" value="180">Ksh.180<br>
     </div>
   </div>
+  <ul id="pizzaorder">
+
+  </ul>
 </body>
 <script src="js/script.js"></script>
 <script src="js/jquery-3.4.1.js"></script>
