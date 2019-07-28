@@ -1,0 +1,16 @@
+@font-face {
+  src:url('fonts/MeieScript-Regular.ttf');
+  font-family: 'MeieScript',cursive;
+  /* src:url('fonts/MeieScript-Regular.ttf');
+  font-family:'MeieScript',cursive; */
+}
+.jumbotron{
+  background-color:rgba(255, 0, 0, 0.5);
+  text-align: center;
+  font-family:'MeieScript',cursive;
+  font-weight: 700;
+  font-size: 100px;
+}
+h2{
+  font-family:'MeieScript',cursive;
+}
